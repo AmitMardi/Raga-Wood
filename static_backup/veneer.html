@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natural Veneer | RAGA Wood and Veneer</title>
+  <meta name="description" content="Explore our premium collection of natural wood veneers.">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/components.js"></script>
+  <script src="js/main.js" defer></script>
+  <style>
+    .page-header { background-color: var(--primary); color: white; padding: 120px 0 60px; text-align: center; margin-top: 80px; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+    .product-item { text-align: center; }
+    .product-item img { width: 100%; border-radius: var(--radius-sm); box-shadow: var(--shadow-sm); cursor: zoom-in; }
+    .product-item p { margin-top: 15px; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Natural Veneer</h1>
+      <p style="font-size: 1.2rem; opacity: 0.9;">Beautiful grain patterns for an elegant finish.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="product-grid">
+        <!-- Sample Items -->
+        <div class="product-item">
+          <img src="assets/images/veneer.png" alt="American Walnut Veneer">
+          <p>American Walnut</p>
+          <span class="text-muted">Size: 8' × 4'</span>
+        </div>
+        <div class="product-item">
+          <img src="assets/images/veneer.png" alt="Smoked Oak Veneer">
+          <p>Smoked Oak</p>
+          <span class="text-muted">Size: 8' × 4'</span>
+        </div>
+        <div class="product-item">
+          <img src="assets/images/veneer.png" alt="Teak Veneer">
+          <p>Premium Teak</p>
+          <span class="text-muted">Size: 8' × 4'</span>
+        </div>
+        <div class="product-item">
+          <img src="assets/images/veneer.png" alt="Ash Wood Veneer">
+          <p>Ash Wood</p>
+          <span class="text-muted">Size: 8' × 4'</span>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: 80px;">
+        <h3 style="margin-bottom: 20px;">Want to experience more such exceptional products?</h3>
+        <a href="gallery.html" class="btn btn-primary" style="margin-right: 15px;">Visit Us</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</body>
+</html>

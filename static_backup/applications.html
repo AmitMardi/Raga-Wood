@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applications | RAGA Wood and Veneer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/components.js"></script>
+  <script src="js/main.js" defer></script>
+  <style>
+    .coming-soon {
+      min-height: calc(100vh - 80px - 300px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      margin-top: 80px;
+    }
+    .coming-soon h1 {
+      font-size: 3.5rem;
+      color: var(--primary);
+      margin-bottom: 20px;
+    }
+    .coming-soon p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+    .icon-large {
+      font-size: 5rem;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+  <div class="coming-soon section-bg">
+    <div class="icon-large">🚧</div>
+    <h1>Coming Soon</h1>
+    <p>We are currently curating a comprehensive guide to the applications of our premium interior surfaces. Check back soon for inspiring ideas and technical guidelines.</p>
+    <a href="contact.html" class="btn btn-secondary" style="font-size: 1.1rem; padding: 15px 30px;">Get in touch with our experts</a>
+  </div>
+
+  <app-footer></app-footer>
+</body>
+</html>

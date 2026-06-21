@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | RAGA Wood and Veneer</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/components.js"></script>
+  <script src="js/main.js" defer></script>
+  <style>
+    .page-header { background-color: var(--primary); color: white; padding: 120px 0 60px; text-align: center; margin-top: 80px; }
+  </style>
+</head>
+<body>
+  <app-navbar></app-navbar>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p style="font-size: 1.2rem; opacity: 0.9;">We'd love to hear from you! Please fill out the form below — our executive will get in touch with you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+        
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Thank you for reaching out. We will get back to you shortly.'); this.reset();">
+            <div class="form-group">
+              <label for="fullName" style="display: block; margin-bottom: 8px; font-weight: 500;">Full Name *</label>
+              <input type="text" id="fullName" class="form-control" required placeholder="John Doe">
+            </div>
+            
+            <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+              <div>
+                <label for="email" style="display: block; margin-bottom: 8px; font-weight: 500;">Email *</label>
+                <input type="email" id="email" class="form-control" required placeholder="john@example.com">
+              </div>
+              <div>
+                <label for="phone" style="display: block; margin-bottom: 8px; font-weight: 500;">Phone *</label>
+                <input type="tel" id="phone" class="form-control" required placeholder="+91 XXXXX XXXXX">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="businessType" style="display: block; margin-bottom: 8px; font-weight: 500;">Type of Business *</label>
+              <select id="businessType" class="form-control" required style="appearance: auto; background-color: white;">
+                <option value="" disabled selected>Select an option</option>
+                <option value="architect">Architect</option>
+                <option value="interior_designer">Interior Designer</option>
+                <option value="dealers">Dealers</option>
+                <option value="manufacturers">Manufacturers</option>
+                <option value="others">Others</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" style="display: block; margin-bottom: 8px; font-weight: 500;">Message *</label>
+              <textarea id="message" class="form-control" required placeholder="How can we help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-secondary" style="width: 100%; font-size: 1.1rem; padding: 15px;">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div>
+          <div class="contact-info-card">
+            <h3 style="margin-bottom: 30px; color: var(--primary);">Get In Touch</h3>
+            
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Head Office</h4>
+                <p class="text-muted">Ragawood Veneers Pvt Ltd.<br>403/1, Dakshindari Road,<br>ALCOVE GLORIA Mall, Shop No. 1,<br>VIP, Golaghat, Kolkata – 700048,<br>West Bengal, India</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Phone</h4>
+                <p class="text-muted"><a href="tel:+918017757170">+91 8017757170</a></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <h4 style="margin-bottom: 5px;">Email</h4>
+                <p class="text-muted"><a href="mailto:ragawoodveneers@gmail.com">ragawoodveneers@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.670354460592!2d88.3970631!3d22.608035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027670731f8f3b%3A0xc3afbfdfb556f8f5!2sAlcove%20Gloria!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <app-footer></app-footer>
+</body>
+</html>
