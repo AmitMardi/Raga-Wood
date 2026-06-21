@@ -46,9 +46,9 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-5 text-white">Follow Us</h4>
             <div className="flex gap-4">
-              <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-square-facebook text-white text-xl"></i></a>
-              <a href="#" aria-label="Twitter" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-square-x-twitter text-white text-xl"></i></a>
-              <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-square-instagram text-white text-xl"></i></a>
+              <a href="#" aria-label="Facebook" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-facebook-f text-white text-xl"></i></a>
+              <a href="#" aria-label="Twitter" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-x-twitter text-white text-xl"></i></a>
+              <a href="#" aria-label="Instagram" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:-translate-y-1 transition-all"><i className="fa-brands fa-instagram text-white text-xl"></i></a>
             </div>
           </div>
         </div>
